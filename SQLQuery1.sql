@@ -18,3 +18,10 @@ Insert into EmployeeTable values
 select * from EmployeeTable
 
 select salary from EmployeeTable where name='Sneha'
+
+alter table EmployeeTable add Gender char (1)
+
+update EmployeeTable set Gender ='F' where name = 'Rutuja'
+
+update  EmployeeTable set Gender ='M' where ID in(2,3) ;
+update  EmployeeTable set Gender ='F' where ID in(4) ;
