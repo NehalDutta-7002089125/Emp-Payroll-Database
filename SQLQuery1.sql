@@ -25,3 +25,27 @@ update EmployeeTable set Gender ='F' where name = 'Rutuja'
 
 update  EmployeeTable set Gender ='M' where ID in(2,3) ;
 update  EmployeeTable set Gender ='F' where ID in(4) ;
+
+select Sum(Salary) as Total_Salary_Of_Male from EmployeeTable where Gender = 'M' GROUP BY Gender
+select Sum(Salary) as Total_Salary_Of_female from EmployeeTable where Gender = 'F' GROUP BY Gender
+select Sum(Salary) as Total_Salary_Of_Employees from EmployeeTable
+
+
+select Avg(Salary) as Average_Salary_Of_Male from EmployeeTable where Gender = 'M' GROUP BY Gender
+select Avg(Salary) as Average_Salary_Of_Female from EmployeeTable where Gender = 'F' GROUP BY Gender
+select Avg(Salary) as Average_Salary_Of_Employees from EmployeeTable
+
+
+select Min(Salary) as Minimum_Salary_Of_Male from EmployeeTable where Gender = 'M' GROUP BY Gender
+select Min(Salary) as Minimum_Salary_Of_Female from EmployeeTable where Gender = 'F' GROUP BY Gender
+select Min(Salary) as Minimum_Salary_Of_Employee from EmployeeTable
+
+
+select Max(Salary) as Maximum_Salary_Of_Male from EmployeeTable where Gender = 'M' GROUP BY Gender
+select Max(Salary) as Maximum_Salary_Of_Female from EmployeeTable where Gender = 'F' GROUP BY Gender
+select Max(Salary) as Maximum_Salary_Of_Employee from EmployeeTable
+
+
+select Count(Id) as Number_Of_Male_Employees from EmployeeTable where Gender = 'M' GROUP BY Gender
+select Count(Id) as Number_Of_Female_Employees from EmployeeTable where Gender = 'F' GROUP BY Gender
+select Count(Id) as Total_Employees from EmployeeTable
