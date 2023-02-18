@@ -16,3 +16,5 @@ Insert into EmployeeTable values
 
 
 select * from EmployeeTable
+
+select salary from EmployeeTable where name='Sneha'
